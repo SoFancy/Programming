@@ -12,14 +12,14 @@ void printBeer(int& beers) {
     int next = *(&beers-1);
     s = (next == 1) ? " bottle " : " bottles ";
 
-    std::cout << next << s << "of beer on the wall\n\n";
+    std::cout << next << s << "of beer on the wall!\n\n";
 }
 
 int main() {
     std::vector<int> bottles;
 
     // Fill it up backwards!
-    for(int i = 0; i != 99; i++)
+    for(int i = 0; i <= 99; ++i)
         bottles.push_back(i);
 
     std::vector<int>::reverse_iterator rit;
